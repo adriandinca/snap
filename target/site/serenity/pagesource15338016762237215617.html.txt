@@ -1,0 +1,8 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head></head><body>
+<form id="j_idt3" name="j_idt3" method="post" action="/finger/faces/cydaxFlow-home.xhtml;jsessionid=rLqJ4bcSIjkaqO3yKmOIGLN9vWP3cbfpbthVLMNu.adi-ubuntu?jfwid=rLqJ4bcSIjkaqO3yKmOIGLN9vWP3cbfpbthVLMNu:0" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt3" value="j_idt3">
+
+		<p><input id="j_idt3:nextButton" type="submit" name="j_idt3:nextButton" value="CYDAX Flow">
+		</p><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-4946089434765718650:7253835505788537154" autocomplete="off"><input type="hidden" name="javax.faces.ClientWindow" id="j_id1:javax.faces.ClientWindow:0" value="rLqJ4bcSIjkaqO3yKmOIGLN9vWP3cbfpbthVLMNu:0" autocomplete="off">
+</form>
+</body></html>
