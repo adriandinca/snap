@@ -13,7 +13,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 @DefaultUrl("http://localhost:8080/finger/faces/cydaxFlow-home.xhtml")
 public class CYDAXPage extends PageObject {
 
-	@FindBy(css="[id$=\"nextButton\"]")
+	@FindBy(css="[id$=\"nextBtn\"]")
 	private WebElement nextBtn;
 
 	@FindBy(css="[id$=\"test\"]")

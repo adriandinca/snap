@@ -11,7 +11,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 @DefaultUrl("http://localhost:8080/finger/faces/crmFlow-home.xhtml")
 public class CRMPage extends PageObject {
 
-	@FindBy(css="[id$=\"nextButton\"]")
+	@FindBy(css="[id$=\"nextBtn\"]")
 	private WebElement nextBtn;
 
 	@FindBy(css="[id$=\"crm-test\"]")
@@ -22,12 +22,10 @@ public class CRMPage extends PageObject {
 	
 	public void copyTest() {
 		scenario.setTest(crmTest.getAttribute("value"));
-		System.out.println("test: "+scenario.getTest());
 	}
 
 	public void copyTest2() {
 		scenario.setTest2(crmTest2.getAttribute("value"));
-		System.out.println("test2: "+scenario.getTest2());
 	}
 
 	public void clickNext() {
