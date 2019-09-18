@@ -7,8 +7,10 @@ import lombok.Setter;
 @Setter
 public class Scenario {
 
-	private String test;
-
-	private String test2;
+	private String serviceRequest;
+	private String country;
+	private String agreement;
+	private String company;
+	private String partNumber;
 
 }

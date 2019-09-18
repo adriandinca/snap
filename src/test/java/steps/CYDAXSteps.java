@@ -2,56 +2,40 @@ package steps;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import pages.CYDAXPage;
 
 public class CYDAXSteps {
 
 	private CYDAXPage page;
 
-	@Given("^I am on the CYDAX home page\\.$")
+	@Given("^Snap is on the CYDAX home page\\.$")
 	public void i_am_on_the_CYDAX_home_page() {
 		page.open();
 	}
 
-	@Given("^I click next\\.$")
-	public void i_click_next() {
-		page.clickNext();
+	@Then("^Snap pastes the service request number\\.$")
+	public void snap_pastes_the_service_request_number() {
+		page.sendKeysSRNumber();
+	}
+	
+	@Then("^Snap pastes the country\\.$")
+	public void snap_pastes_the_country() {
+		page.sendKeysCountry();
 	}
 
-	@Given("^I copy the test(\\d+) value\\.$")
-	public void i_copy_the_test_value(int arg1) {
-	    
+	@Then("^Snap pastes the agreement type\\.$")
+	public void snap_pastes_the_agreement_type() {
+		page.sendKeysAgreement();
 	}
 
-	@Then("^the test value is displayed correctly\\.$")
-	public void the_test_value_is_displayed_correctly() {
-	    page.verifyTest();
+	@Then("^Snap pastes the company\\.$")
+	public void snap_pastes_the_company() {
+		page.sendKeysCompany();
 	}
 
-	@Then("^the second test value is displayed correctly\\.$")
-	public void the_second_test_value_is_displayed_correctly() {
-		page.verifyTest2();
-	    
-	}
-
-	@When("^I paste the test value in the test field\\.$")
-	public void i_paste_the_test_value_in_the_test_field() {
-		page.sendKeysTest();
-	}
-
-	@When("^I paste the second test value in the second test field\\.$")
-	public void i_paste_the_second_test_value_in_the_second_test_field() {
-		page.sendKeysTest2();
-	}
-
-	@Given("^I wait for (\\d+) seconds\\.$")
-	public void i_wait_for_seconds(int seconds) {
-		try {
-			Thread.sleep(seconds * 1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	@Then("^Snap pastes the part number\\.$")
+	public void snap_pastes_the_part_number() {
+		page.sendKeysPartNumber();
 	}
 
 }

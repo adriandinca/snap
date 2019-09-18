@@ -1,28 +1,40 @@
-Feature: Log PM
+Feature: HP
 
-Scenario: Log PM
+Scenario Outline: Snap logs a PM Kit
 
-Given I am on the CRM home page.
-And I wait for 1 seconds.
-And on the CRM page I click next.
-And I wait for 1 seconds.
-And on the CRM page I click next.
-And on the CRM page I copy the test value.
-And on the CRM page I copy the second test value.
-And I wait for 1 seconds.
-And on the CRM page I click next.
-And I wait for 1 seconds.
-And on the CRM page I click next.
-And I wait for 1 seconds.
-When I am on the CYDAX home page.
-And I wait for 1 seconds.
-And I click next.
-And I paste the test value in the test field.
-And I wait for 1 seconds.
-And I click next.
-And I paste the second test value in the second test field.
-And I wait for 1 seconds.
-And I click next.
-Then the test value is displayed correctly.
-And the second test value is displayed correctly.
-And I wait for 3 seconds.
+Given Snap is on the CRM home page.
+And Snap clicks next.
+And Snap clicks next.
+And Snap copies the service request number.
+And Snap copies the country
+And Snap copies the agreement
+And Snap copies the company
+And Snap copies the part numer
+When the agreement type is PM Kit.
+Then Snap clicks next.
+And Snap clicks next.
+
+And Snap is on the CYDAX home page.
+And Snap Clicks 'Go to search'.
+And Snap pastes the service request number.
+And Snap Clicks search.
+And Snap Clicks edit.
+And Snap pastes the country.
+And Snap pastes the agreement type.
+And Snap pastes the company.
+And Snap pastes the part number.
+And Snap clicks next.
+And Snap Clicks finnish.
+
+Examples:
+|run|
+|1|
+|2|
+|3|
+|4|
+|5|
+|6|
+|7|
+|8|
+|9|
+|10|
