@@ -10,7 +10,7 @@ And Snap copies the country
 And Snap copies the agreement
 And Snap copies the company
 And Snap copies the part numer
-When the agreement type is PM Kit.
+#When the agreement type is PM Kit.
 Then Snap clicks next.
 And Snap clicks next.
 
@@ -29,12 +29,12 @@ And Snap Clicks finnish.
 Examples:
 |run|
 |1|
-|2|
-|3|
-|4|
-|5|
-|6|
-|7|
-|8|
-|9|
-|10|
+#|2|
+#|3|
+#|4|
+#|5|
+#|6|
+#|7|
+#|8|
+#|9|
+#|10|
