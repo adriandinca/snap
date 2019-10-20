@@ -1,8 +1,5 @@
 package steps;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import pages.Page;
